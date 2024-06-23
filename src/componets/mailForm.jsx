@@ -13,7 +13,7 @@ export default function MailForm(){
         [event.target.name]:[event.target.value]                                
         }})
     }
-    handleSubmit = e => {
+    const handleSubmit = e => {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
