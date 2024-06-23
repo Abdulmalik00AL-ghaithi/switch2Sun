@@ -26,8 +26,11 @@ export default function MailForm(){
       };
     return(
         <>
-            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="contact" />
+                <label className="hidden">
+                    Don’t fill this out if you’re human: <input name="bot-field" />
+                </label>
                 <label>
                 Naam<input  type="text"
                             name="firstName"

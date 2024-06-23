@@ -17,6 +17,9 @@
   font-weight: 500;
   
 }
+.hidden{
+  display: none;
+}
 
 /* header */
 .navbar-container{
