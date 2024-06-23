@@ -9,7 +9,7 @@ import MailForm from "./mailForm";
 export default function Home(){
     return(
         <>
-            <mian className="content-container">
+            <main className="content-container">
 
                 <section className="title-container">
 
@@ -93,7 +93,7 @@ export default function Home(){
 
                 <MailForm/>
 
-            </mian>
+            </main>
 
         </>
     )

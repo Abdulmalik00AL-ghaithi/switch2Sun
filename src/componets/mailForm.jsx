@@ -15,7 +15,12 @@ export default function MailForm(){
     }
     return(
         <>
-            <form>
+            <form
+                name="contact v1"
+                method="post"
+                data-netlify="true"
+                onSubmit="submit">
+                <input type="hidden" name="form-name" value="contact v1"/>
                 <h2>Contact met ons</h2>
                 <label>
                 Naam<input  type="text"
