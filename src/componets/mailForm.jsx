@@ -66,7 +66,7 @@ export default function MailForm(){
                                   >
                         </textarea>
                 </label>
-                <button>Verstuur</button>
+                <button type="submit">Verstuur</button>
 
             </form>
         </>
