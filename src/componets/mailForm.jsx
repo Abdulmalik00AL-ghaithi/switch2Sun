@@ -67,7 +67,11 @@ export default function MailForm(){
                         </textarea>
                 </label>
                 <button type="submit">Verstuur</button>
-
+                <form name="contact" netlify netlify-honeypot="bot-field" style="display: none;">
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
             </form>
         </>
     )
