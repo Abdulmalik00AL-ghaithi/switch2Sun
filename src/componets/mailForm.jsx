@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function MailForm(){
-    const [FormData,setFormData] = React.useState({
+    const [formData,setFormData] = React.useState({
         firstName:"",
         lastName:"",
         email:"",
@@ -30,6 +30,8 @@ export default function MailForm(){
                 <input type="hidden" name="form-name" value="contact" />
                 <label className="hidden">
                     Don’t fill this out if you’re human: <input name="bot-field" />
+                    <input type="hidden" name="subject" 
+                            value={"New lead from"+formData.firstName +" " +formData.lastName} />
                 </label>
                 <label>
                 Naam<input  type="text"
