@@ -192,6 +192,9 @@
   .title-mask-container{
     padding: 200px 0;
   }
+  .title-container{
+    height: 50vh;
+  }
 
   
 }
