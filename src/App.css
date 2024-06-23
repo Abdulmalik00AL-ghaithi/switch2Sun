@@ -4,7 +4,7 @@
 }
 
 #root {
-  width: 100dvw;
+  
   min-height: 100vh;
   margin: 0 auto;
   text-align: center;
@@ -27,13 +27,13 @@
   align-items: center;
   padding-left:7.5% ;
   padding-right:7.5% ;
-  gap: 10dvw;
+  gap: 10svw;
   white-space: nowrap;
 }
 .navbar-menu{
   display: flex;
   list-style: none;
-  gap: 4.5dvw;
+  gap: 4.5svw;
   font-weight: 600;
   font-size: 1.2rem;
   align-items: center;
