@@ -361,6 +361,7 @@ label{
   text-align: left;
   display: flex;
   flex-direction: column;
+  
 }
 textarea ,input{
   background-color: white;
@@ -368,6 +369,11 @@ textarea ,input{
   height: 40px;
   border-radius: 5px;
   border: 1px solid black;
+  padding:5px 10px;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 500;
+  
 }
 
 textarea{
