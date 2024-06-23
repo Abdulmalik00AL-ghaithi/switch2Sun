@@ -13,21 +13,10 @@ export default function MailForm(){
         [event.target.name]:[event.target.value]                                
         }})
     }
-    const handleSubmit = e => {
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...this.state })
-        })
-          .then(() => alert("Success!"))
-          .catch(error => alert(error));
-  
-        e.preventDefault();
-      };
     return(
         <>
-            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" netlify-honeypot="bot-field">
-                <input type="hidden" name="form-name" value="contact" />
+            <form name="contact-v1" method="post" data-netlify="true" data-netlify-honeypot="bot-field" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact-v1" />
                 <label className="hidden">
                     Don’t fill this out if you’re human: <input name="bot-field" />
                     <input type="hidden" name="subject" 
