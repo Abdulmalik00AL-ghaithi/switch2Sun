@@ -26,13 +26,8 @@ export default function MailForm(){
       };
     return(
         <>
-            <form
-                name="contact-v1"
-                method="POST"
-                data-netlify="true"
-                onSubmit={handleSubmit}>
-                <input type="hidden" name="form-name" value="contact-v1"/>
-                <h2>Contact met ons</h2>
+            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact" />
                 <label>
                 Naam<input  type="text"
                             name="firstName"
@@ -67,11 +62,7 @@ export default function MailForm(){
                         </textarea>
                 </label>
                 <button type="submit">Verstuur</button>
-                <form name="contact" netlify netlify-honeypot="bot-field" style="display: none;">
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
+     
             </form>
         </>
     )
