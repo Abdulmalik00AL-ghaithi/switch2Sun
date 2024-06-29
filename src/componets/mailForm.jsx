@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MailForm(){
+export default function MailForm(marginValue){
     const [formData,setFormData] = React.useState({
         firstName:"",
         lastName:"",
@@ -9,13 +9,18 @@ export default function MailForm(){
     })
 
     const handleChange = event =>{
+        // this to handle form the form input
         setFormData(prev => { return{...prev,
         [event.target.name]:[event.target.value]                                
         }})
     }
     return(
         <>
-            <form name="contact v1" method="post" data-netlify="true" data-netlify-honeypot="bot-field" netlify-honeypot="bot-field">
+            <form name="contact v1" 
+                  method="post" data-netlify="true" 
+                  data-netlify-honeypot="bot-field" 
+                  netlify-honeypot="bot-field" 
+                  style={{minHeight:'fit-content'}}>
                 <input type="hidden" name="form-name" value="contact v1" />
                 <label className="hidden">
                     Don’t fill this out if you’re human: <input name="bot-field" />

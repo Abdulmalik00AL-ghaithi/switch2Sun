@@ -1,8 +1,8 @@
 import React from "react";
 import Icon from "../assets/logo-AoPekOy4P7cr6ZPP.avif"
+import {Link} from "react-router-dom"
 
-export default function NavBar(){
-    const [target,setTarget] = React.useState()
+export default function NavBar({activePage}){
     const [drop,setDrop] = React.useState(false)
     
     const navBaranim = () => {
@@ -22,11 +22,11 @@ export default function NavBar(){
 
             
             <ul className={`navbar-menu ${drop ? "drop-navbar-menu" :""}`} >
-                <li>Home</li>
-                <li>Diensten</li>
-                <li>Producten</li>
-                <li>Over ons</li>
-                <li>Contacts</li>
+                <li style={/*this tell what page you are in*/{borderBottom:activePage ==="home" ? "0.5px solid black" : ""}}><Link to={'/'} >Home</Link></li>
+                <li style={/*this tell what page you are in*/{borderBottom:activePage ==="service" ? "0.5px solid black" : ""}}><Link to={'/services'} >Diensten</Link ></li>
+                <li style={/*this tell what page you are in*/{borderBottom:activePage ==="product" ? "0.5px solid black" : ""}}><Link to={'/products'} >Producten</Link ></li>
+                <li style={/*this tell what page you are in*/{borderBottom:activePage ==="aboutus" ? "0.5px solid black" : ""}}><Link to={'/aboutus'} >Over ons</Link ></li>
+                <li style={/*this tell what page you are in*/{borderBottom:activePage ==="contact" ? "0.5px solid black" : ""}}><Link to={'/contact'} >Contacts</Link ></li>
             </ul>
 
         </nav>

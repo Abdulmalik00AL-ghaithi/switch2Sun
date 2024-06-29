@@ -5,10 +5,14 @@ import instq from "../assets/installq-mePLN8RrMLIkp5bg.avif"
 import techNed from "../assets/logo_technieknl-YanBjkRXaWcxpOzZ.avif"
 import vca from "../assets/vca-Aq2BkL9PZyUDbOql.avif"
 import MailForm from "./mailForm";
+import NavBar from "./navBar";
 
 export default function Home(){
+    const activePage = "home"
+
     return(
         <>
+            <NavBar activePage={activePage}/>
             <main className="content-container">
 
                 <section className="title-container">
@@ -21,7 +25,7 @@ export default function Home(){
 
                 </section>
 
-                <article className="article-first">
+                <article  className="article-first home-aticle">
 
                     <img src={image1}/>
 
@@ -43,7 +47,7 @@ export default function Home(){
 
                 </article>
 
-                <article className="article-second">
+                <article className="article-second home-aticle">
                     <img src={image2}/>
 
 
